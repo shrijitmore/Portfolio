@@ -9,7 +9,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const Hero = () => {
     const videoRef = useRef();
-    const isMobile = useMediaQuery({maxWidth:767})
+    const isMobile = useMediaQuery({ maxWidth: 767 })
     useGSAP(()=>{
         const heroSplit = new SplitText('.title', {type:'chars, words'});
         const paragraphs = new SplitText('.subtitle', {type:'lines'});
@@ -71,7 +71,7 @@ const Hero = () => {
   return (
     <>
     <section id="hero" className="noisy">
-    <h1 className="title">DEVELOPER</h1>
+    <h1 className="title">{isMobile ? 'CODER' : 'DEVELOPER'}</h1>
     <img src="/images/hero-left-leaf.png" alt="left-leaf" className='left-leaf'/>
     <img src="/images/hero-right-leaf.png" alt="right-leaf" className='right-leaf'/>
 
@@ -87,7 +87,7 @@ const Hero = () => {
                 <p className="subtitle">
                 Code is my cocktail. And yes, I like it smooth, clean, and served with style.
                 </p>
-                <a href="#Skills">Get to Know my Skills</a>
+                <a href="#About">Get to Know Me</a>
             </div>
         </div> 
     </div>
