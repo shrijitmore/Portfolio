@@ -1,9 +1,9 @@
 // Portfolio constants
 
 export const NAV_LINKS = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
+  { name: "Projects", href: "#project" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -33,26 +33,6 @@ export const PROFILE = {
   location: "Your City, Country",
   email: "your.email@example.com",
 };
-
-export const PROJECTS = [
-  {
-    title: "Project One",
-    description: "A brief description of your project goes here.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "https://github.com/yourusername/project-one",
-    demo: "https://project-one-demo.com",
-    image: "/images/project-one.png",
-  },
-  {
-    title: "Project Two",
-    description: "Another project description.",
-    tech: ["Vue", "Firebase"],
-    link: "https://github.com/yourusername/project-two",
-    demo: "https://project-two-demo.com",
-    image: "/images/project-two.png",
-  },
-  // Add more projects as needed
-];
 
 
 const cocktailLists = [

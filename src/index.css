@@ -211,7 +211,7 @@ body {
         }
     }
 
-    #about {
+    #project {
         @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
 
         .content {
@@ -424,4 +424,3 @@ body {
   75% { transform: translateY(-75%); }
   87.5% { transform: translateY(-87.5%); }
 }
-
