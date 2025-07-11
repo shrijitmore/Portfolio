@@ -53,3 +53,63 @@ export const PROJECTS = [
   },
   // Add more projects as needed
 ];
+
+
+const cocktailLists = [
+  {
+    name: "Languages",
+    country: "JavaScript, TypeScript",
+    detail: "🧠 Fluent",
+    rating: "★★★★★"
+  },
+  {
+    name: "UI",
+    country: "React.js, Tailwind, GSAP",
+    detail: "⚛️ Interactive",
+    rating: "★★★★★"
+  },
+  {
+    name: "Modeling and Animation",
+    country: "Three.js, Blender",
+    detail: "🧊 Immersive",
+    rating: "★★★★☆"
+  },
+  {
+    name: "Design",
+    country: "Figma, Responsive UI",
+    detail: "✏️ Creative",
+    rating: "★★★★★"
+  },
+
+];
+
+const mockTailLists = [
+  {
+    name: "Backend",
+    country: "Node.js, Express, Flask, FastAPI",
+    detail: "🚀 Robust",
+    rating: "★★★★☆"
+  },
+  {
+    name: "DB/Cloud",
+    country: "MongoDB, Firebase, Azure",
+    detail: "☁️ Scalable",
+    rating: "★★★★☆"
+  },
+  {
+    name: "Code Languages",
+    country: "Java, C, C++",
+    detail: "💻 Versatile",
+    rating: "★★★☆☆"
+  },
+  
+  {
+    name: "APIs/Realtime",
+    country: "WebSockets, REST",
+    detail: "⚡ Live",
+    rating: "★★★★☆"
+  }
+];
+
+export { cocktailLists, mockTailLists };
+

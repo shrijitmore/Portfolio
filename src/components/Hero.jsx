@@ -87,7 +87,7 @@ const Hero = () => {
                 <p className="subtitle">
                 Code is my cocktail. And yes, I like it smooth, clean, and served with style.
                 </p>
-                <a href="#About">Get to Know Me</a>
+                <a href="#Skills">Get to Know my Skills</a>
             </div>
         </div> 
     </div>
