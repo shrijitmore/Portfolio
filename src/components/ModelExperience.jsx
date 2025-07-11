@@ -11,6 +11,7 @@ const ModelExperience = () => {
   return (
     <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
         <OrbitControls 
+        enabled={!isMobile}
         enablePan={false} 
         enableZoom={!isMobile && !isTablet} 
         maxDistance={20} 
