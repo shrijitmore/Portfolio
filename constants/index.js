@@ -111,5 +111,16 @@ const mockTailLists = [
   }
 ];
 
-export { cocktailLists, mockTailLists };
+const words = [
+  { text: "Ideas", imgPath: "/images/Assets/ideas.svg" },
+  { text: "Concepts", imgPath: "/images/Assets/concepts.svg" },
+  { text: "Designs", imgPath: "/images/Assets/designs.svg" },
+  { text: "Code", imgPath: "/images/Assets/code.svg" },
+  { text: "Ideas", imgPath: "/images/Assets/ideas.svg" },
+  { text: "Concepts", imgPath: "/images/Assets/concepts.svg" },
+  { text: "Designs", imgPath: "/images/Assets/designs.svg" },
+  { text: "Code", imgPath: "/images/Assets/code.svg" },
+];
+
+export { cocktailLists, mockTailLists, words };
 
