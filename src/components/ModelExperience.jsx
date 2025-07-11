@@ -9,7 +9,7 @@ const ModelExperience = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 })
     const isTablet = useMediaQuery({ maxWidth: 1024 })
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
         <OrbitControls 
         enablePan={false} 
         enableZoom={!isMobile && !isTablet} 
@@ -21,7 +21,7 @@ const ModelExperience = () => {
         <HeroLights />
         <group
         scale={isMobile ? 0.7 : 1}
-        position={[0, -3.5, 0]}
+        position={[1.2, -3.1, 0]}
         rotation={[0.2, -Math.PI/4, 0]}
         
         >
