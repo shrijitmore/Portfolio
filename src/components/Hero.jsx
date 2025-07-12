@@ -48,20 +48,23 @@ const Hero = () => {
         const startValue = isMobile ? 'top 50%' : 'center 60%';
         const endValue = isMobile ?  '120% top' : 'bottom top'
 
-       const tl = gsap.timeline({
-            scrollTrigger: {
-              trigger: 'video',
-              start: startValue,
-              end: endValue,     
-              scrub: true,
-              pin: true,
-            }
-          });
-           videoRef.current.onloadedmetadata = () => {
-            tl.to(videoRef.current, {
-                currentTime: videoRef.current.duration
-            })
-           }
+        if (!isMobile && videoRef.current) {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: videoRef.current,
+                    start: startValue,
+                    end: endValue,     
+                    scrub: true,
+                    pin: true,
+                }
+            });
+            videoRef.current.onloadedmetadata = () => {
+                tl.to(videoRef.current, {
+                    currentTime: videoRef.current.duration
+                });
+            };
+        }
+
         // Cleanup (optional, for React strict mode)
         return () => {
             heroSplit.revert();
@@ -94,9 +97,11 @@ const Hero = () => {
 
     </section>
 
-    <div className='video absolute inset-0'>
-        <video ref={videoRef} src="/videos/output.mp4" muted playsInline preload='auto' ></video>
-    </div>
+    {!isMobile && (
+      <div className="video absolute inset-0">
+        <video ref={videoRef} src="/videos/output.mp4" muted playsInline preload="auto"></video>
+      </div>
+    )}
     </>
   )
 }

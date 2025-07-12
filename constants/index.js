@@ -130,5 +130,28 @@ const techStackIcons = [
   },
 ];
 
-export { cocktailLists, mockTailLists, words, techStackIcons };
+const socialImgs = [
+  {
+    name: "insta",
+    imgPath: "/images/insta.png",
+    url: "https://instagram.com/yourusername",
+  },
+  {
+    name: "fb",
+    imgPath: "/images/fb.png",
+    url: "https://facebook.com/yourusername",
+  },
+  {
+    name: "x",
+    imgPath: "/images/x.png",
+    url: "https://twitter.com/yourusername",
+  },
+  {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+    url: "https://linkedin.com/in/yourusername",
+  },
+];
+
+export { cocktailLists, mockTailLists, words, techStackIcons, socialImgs };
 
