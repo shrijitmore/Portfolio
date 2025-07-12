@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import About from './components/About'
 import PROJECTS from './components/Projects'
+import TechStack from './components/TechStack'
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Skills />
         <About />
         <PROJECTS/>
+        <TechStack/>
       </main>
   )
 }

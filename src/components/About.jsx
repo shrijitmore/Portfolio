@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section id="about" className="hero-layout relative overflow-hidden">
         
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
+        <header className="container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1 className="hero-line">
@@ -64,7 +64,7 @@ Think of it as my digital handshake. If you like what you see, let's build somet
             </p>
         <div className="hidden lg:flex justify-start mt-6">
           <a
-            href="#projects"
+            href="#project"
             className="relative inline-block px-8 py-3 font-semibold rounded-full bg-gradient-to-r from-[#d90429] to-[#ff6f61] text-white shadow-lg overflow-hidden group transition-all duration-300"
           >
             <span className="absolute inset-0 w-full h-full bg-white opacity-0 group-hover:opacity-10 transition-all duration-300"></span>

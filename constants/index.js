@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#project" },
+  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -102,5 +103,32 @@ const words = [
   { text: "Code", imgPath: "/images/Assets/code.svg" },
 ];
 
-export { cocktailLists, mockTailLists, words };
+const techStackIcons = [
+  {
+    name: "React Developer",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Python Developer",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Backend Developer",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Interactive Developer",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+];
+
+export { cocktailLists, mockTailLists, words, techStackIcons };
 
