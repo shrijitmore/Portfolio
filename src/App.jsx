@@ -7,7 +7,7 @@ import About from './components/About'
 import PROJECTS from './components/Projects'
 import TechStack from './components/TechStack'
 import Contact from './components/Contact'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
