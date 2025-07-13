@@ -8,24 +8,6 @@ export const NAV_LINKS = [
   { name: "Contact", href: "#contact" },
 ];
 
-export const SOCIAL_LINKS = [
-  {
-    name: "GitHub",
-    url: "https://github.com/yourusername",
-    icon: "github", // You can map this to an icon in your component
-  },
-  {
-    name: "LinkedIn",
-    url: "https://linkedin.com/in/yourusername",
-    icon: "linkedin",
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/yourusername",
-    icon: "twitter",
-  },
-];
-
 export const PROFILE = {
   name: "Shrijit",
   tagline: "Full Stack Developer & Designer",
@@ -131,25 +113,25 @@ const techStackIcons = [
 ];
 
 const socialImgs = [
-  {
-    name: "insta",
-    imgPath: "/images/insta.png",
-    url: "https://instagram.com/yourusername",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-    url: "https://facebook.com/yourusername",
-  },
+  // {
+  //   name: "insta",
+  //   imgPath: "/images/insta.png",
+  //   url: "https://instagram.com/yourusername",
+  // },
+  // {
+  //   name: "fb",
+  //   imgPath: "/images/fb.png",
+  //   url: "https://facebook.com/yourusername",
+  // },
   {
     name: "x",
     imgPath: "/images/x.png",
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/ShrijitM_26",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://linkedin.com/in/shrijitmore26",
   },
 ];
 
