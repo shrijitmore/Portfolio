@@ -118,11 +118,11 @@ const socialImgs = [
   //   imgPath: "/images/insta.png",
   //   url: "https://instagram.com/yourusername",
   // },
-  // {
-  //   name: "fb",
-  //   imgPath: "/images/fb.png",
-  //   url: "https://facebook.com/yourusername",
-  // },
+  {
+    name: "GitHub",
+    imgPath: "/images/Assets/github.png",
+    url: "https://facebook.com/yourusername",
+  },
   {
     name: "x",
     imgPath: "/images/x.png",
