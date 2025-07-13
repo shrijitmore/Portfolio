@@ -451,7 +451,7 @@ body {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full rounded-xl absolute inset-0;
         }
       }
 

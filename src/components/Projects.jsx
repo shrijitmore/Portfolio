@@ -148,36 +148,40 @@ const Project = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/DigitalTwin.png" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                3D Smart Factory Digital Twin (Blender, ThreeJS, Reactjs, Websockets, Flask)
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Developed a comprehensive 3D Digital Twin system for smart factory visualization with real time data integration and interactive dashboard for Industry 4.0.<br />
+                Demo Frontend Git URL: <a href="https://github.com/shrijitmore/Digital-Twin-of-iFactory" target="_blank" rel="noopener noreferrer">https://github.com/shrijitmore/Digital-Twin-of-iFactory</a>
               </p>
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className="bg-[#FFEFDB] inline-block rounded-3xl overflow-hidden">
                 <img
-                  src="/images/project2.png"
-                  alt="Library Management Platform"
+                  src="/images/hotel.png"
+                  alt="Hotel Management Platform"
+                  className="rounded-3xl"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Hotel Management Platform (Backend)</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+              <div className="bg-[#FFE7EB] inline-block rounded-3xl overflow-hidden">
+                <img
+                  src="/images/dashboard.png"
+                  alt="Ai powered Dashboard Application"
+                  className="rounded-3xl"
+                />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Ai powered Dashboard Application (FullStack)</h2>
             </div>
           </div>
         </div>
