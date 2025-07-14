@@ -4,11 +4,29 @@ import { words } from "../../constants";
 import ModelExperience from "./ModelExperience";
 
 const About = () => {
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".hero-text h1",
+  //     { y: 50, opacity: 0 },
+  //     { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+  //   );
+  // });
+
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: "#about",      // The section to watch
+          start: "top 80%",       // When the top of #about hits 80% from the top of the viewport
+        },
+      }
     );
   });
 
@@ -46,7 +64,7 @@ const About = () => {
              <p className="text-white-50 md:text-xl relative z-10 pointer-events-none text-justify max-w-2xl min-h-[120px]">
   Hi, I'm Shrijit—a full-stack developer passionate about turning ideas into interactive, real-world solutions. I love building everything from 3D digital twins to AI-powered Fullstack App, always focusing on clean code and great user experiences. Whether it's React, Flask, Three.js, or MongoDB, I enjoy exploring new tech and pushing boundaries. If you're looking for someone who's curious, creative, and ready to collaborate, let's connect and make something awesome together! 👋
 </p>
-<div className="z-10 lg:flex justify-start mt-6">
+<div className="z-10 lg:flex justify-start ">
           <a
             href="#project"
             className="relative inline-block px-5 py-2 md:px-8 md:py-3 text-sm md:text-base font-semibold rounded-full bg-gradient-to-r from-[#d90429] to-[#ff6f61] text-white shadow-lg overflow-hidden group transition-all duration-300"
@@ -77,7 +95,7 @@ const About = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="hero-3d-layout">
+          <div className="hero-3d-layout ">
             <ModelExperience />
           </div>
         </figure>
