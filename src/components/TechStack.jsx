@@ -41,7 +41,7 @@ const TechStack = () => {
           title="How I Can Contribute & My Key Skills"
           sub="🤝 What I Bring to the Table"
         />
-        <div className="tech-grid">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 mt-16 mb-16">
           {/* Loop through the techStackIcons array and create a component for each item. 
               The key is set to the name of the tech stack icon, and the classnames are set to 
               card-border, tech-card, overflow-hidden, and group. The xl:rounded-full and rounded-lg 
@@ -49,7 +49,7 @@ const TechStack = () => {
           {techStackIcons.map((techStackIcon) => (
             <div
               key={techStackIcon.name}
-              className="relative card-border tech-card overflow-hidden group rounded-2xl shadow-2xl bg-gradient-to-br from-gray-800 to-gray-900 hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] transform hover:-translate-y-2 transition-all duration-300"
+              className="relative card-border tech-card overflow-hidden group rounded-2xl shadow-2xl bg-gradient-to-br from-gray-800 to-gray-900 hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] transform hover:-translate-y-2 transition-all duration-300 w-full h-96"
             >
               {/* Glossy overlay */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-10">
@@ -59,17 +59,17 @@ const TechStack = () => {
               {/* The tech-card-animated-bg div is used to create a background animation when the 
                   component is hovered. */}
               <div className="tech-card-animated-bg" />
-              <div className="tech-card-content relative z-20">
+              <div className="tech-card-content relative z-20 h-full flex flex-col justify-center items-center gap-3">
                 {/* The tech-icon-wrapper div contains the TechIconCardExperience component, 
                     which renders the 3D model of the tech stack icon. */}
-                <div className="tech-icon-wrapper">
+                <div className="w-40 h-40 flex justify-center items-center">
                   <TechIconCardExperience model={techStackIcon} />
                 </div>
                 {/* The padding-x and w-full classes are used to add horizontal padding to the 
                     text and make it take up the full width of the component. */}
-                <div className="padding-x w-full">
+                <div className="w-full px-2 text-center">
                   {/* The p tag contains the name of the tech stack icon. */}
-                  <p>{techStackIcon.name}</p>
+                  <p className="text-base md:text-lg font-semibold text-white">{techStackIcon.name}</p>
                 </div>
               </div>
             </div>
