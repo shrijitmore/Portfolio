@@ -2,8 +2,11 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "../../constants";
 import ModelExperience from "./ModelExperience";
+import { useMediaQuery } from 'react-responsive';
 
 const About = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   // useGSAP(() => {
   //   gsap.fromTo(
   //     ".hero-text h1",
@@ -95,9 +98,11 @@ const About = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="hero-3d-layout ">
-            <ModelExperience />
-          </div>
+          {!isMobile && (
+            <div className="hero-3d-layout ">
+              <ModelExperience />
+            </div>
+          )}
         </figure>
       </div>
 
